@@ -1,4 +1,4 @@
-import Navbar from 'react-bootstrap/navbar'
+import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
 import Nav from 'react-bootstrap/nav'
 import 'index.css'
