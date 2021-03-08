@@ -1,3 +1,5 @@
 .large {
-    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
 }

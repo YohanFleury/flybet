@@ -9,7 +9,7 @@ const Signup = () => {
         <Form>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Pseudo</Form.Label>
-                <Form.Control type="text" placeholder="Enter pseudol" />
+                <Form.Control type="text" placeholder="Enter pseudo" />
             </Form.Group>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
