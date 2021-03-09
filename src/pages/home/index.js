@@ -1,9 +1,10 @@
 import React from 'react'
+import Explonation from 'components/explonations'
 const Home = () => {
   return (
-      <>
-        <h1>La page home</h1>
-      </>
+      <div>
+        <Explonation />
+      </div>
   )
 }
 export default Home

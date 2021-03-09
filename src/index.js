@@ -11,6 +11,7 @@ import MyNavbar from './components/navbar'
 import Signin from './components/signin'
 import Signup from './components/signup'
 import IsLogin from "islogin.js";
+import MyProfil from './pages/myprofil'
 
 const App = () => {
   const [isLogin, setIsLogin] = useState(false)
@@ -27,16 +28,19 @@ const App = () => {
                 <Route path="/" exact>
                     <Home />
                 </Route>
-                <Route path="/sign-in" exact>
+                <Route path="/sign-in">
                     <Signin onToggleLogin ={handleLogin} />
                 </Route>
-                <Route path="/sign-up" exact>
+                <Route path="/sign-up">
                     <Signup />
+                </Route>
+                <Route path="/my-profil">
+                    <MyProfil />
                 </Route>
             </Switch> 
         </main>
       </Router>
-  </IsLogin.Provider>
+    </IsLogin.Provider>
   )
 }
 ReactDOM.render(<App />, document.getElementById('root'))

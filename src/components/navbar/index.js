@@ -6,6 +6,7 @@ import LoginButton from 'components/login'
 import IsLogin from 'islogin.js'
 import {useContext} from 'react'
 import Button from 'react-bootstrap/Button'
+import ProfilButton from 'components/myprofil_button'
 
 const MyNavbar = ({onToggleLogin}) => {
     const isLogin = useContext(IsLogin)
@@ -16,6 +17,7 @@ const MyNavbar = ({onToggleLogin}) => {
     : goodButton = <LoginButton />
     
     isLogin ? goodLink = "/" : goodLink = "/sign-in" 
+
     console.log(goodLink, "connecté ?", isLogin)
   return (
     <Navbar bg="dark" variant="dark">
@@ -24,7 +26,8 @@ const MyNavbar = ({onToggleLogin}) => {
             <Link to="/" className="lexnav">Home</Link>
             <Link to="#features" className="lexnav">Features</Link>
             <Link to="#pricing" className="lexnav">Pricing</Link>
-            <Link to={goodLink}> {goodButton} </Link>
+            <Link to="/my-profil" className="lexnav>"> <ProfilButton /> </Link>
+            <Link to={goodLink} className="lexnav"> {goodButton} </Link>
             
         </Nav>
     
