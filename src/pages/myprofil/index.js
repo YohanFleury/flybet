@@ -1,6 +1,11 @@
+import ProfilCard from 'components/profil_card'
+import 'pages/myprofil/index.css'
+
 const MyProfil = () => {
   return (
-      <h3> Bienvenue sur ta page profil </h3>
+      <div className="flex-profil">
+        <ProfilCard />
+      </div>
   )
 }
 export default MyProfil
