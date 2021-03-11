@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom'
 import React from 'react';
 
 
-
 const Signin = ({onToggleLogin}) => {
     
   return (
-    <div className="large">
+    <div className="header">
+      <div className="calltoaction">
+        <h2>Connecte toi sur ton espace</h2>
+        <div className="form-container">
         <Form>
             <Form.Group>
                 <Form.Label>Pseudo</Form.Label>
@@ -25,8 +27,9 @@ const Signin = ({onToggleLogin}) => {
                      Se connecter 
             </Button>
             </Link>
-            <p> Pas encore de compte ? <Link to="/sign-up">Inscris-toi !</Link> </p>
         </Form>
+        </div>
+      </div>  
     </div>
   )
 }

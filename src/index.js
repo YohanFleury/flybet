@@ -7,11 +7,12 @@ import {
 } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/home' 
-import MyNavbar from './components/navbar'
 import Signin from './components/signin'
-import Signup from './components/signup'
 import IsLogin from "islogin.js";
 import MyProfil from './pages/myprofil'
+import BeforeSignup from 'components/beforesignup';
+import SignupForTipster from './components/signupTipster';
+import SignupForParieur from 'components/signupParieur';
 
 const App = () => {
   const [isLogin, setIsLogin] = useState(false)
@@ -22,7 +23,6 @@ const App = () => {
   return (
     <IsLogin.Provider value={isLogin}>
       <Router>
-        <MyNavbar onToggleLogin={handleLogin} />
         <main>
             <Switch>
                 <Route path="/" exact>
@@ -31,11 +31,17 @@ const App = () => {
                 <Route path="/sign-in">
                     <Signin onToggleLogin ={handleLogin} />
                 </Route>
-                <Route path="/sign-up">
-                    <Signup />
+                <Route path="/sign-up/tipster">
+                    <SignupForTipster />
+                </Route>
+                <Route path="/sign-up/parieur">
+                    <SignupForParieur />
                 </Route>
                 <Route path="/my-profil">
                     <MyProfil />
+                </Route>
+                <Route path="/inscription">
+                    <BeforeSignup />
                 </Route>
             </Switch> 
         </main>

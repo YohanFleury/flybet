@@ -1,21 +1,26 @@
-.header {
+.background {
+    background-color: #666562;
+    background-image: url('assets/signup-tipster.jpg');
     width: 100%;
     height: 790px;
-    background-color: black;
-    background-image: url("assets/bg-img-header.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
-.calltoaction {
+
+.main-container {
     width: 700px;
     height: 600px;
     background-color: black;
     opacity: 0.9;
-    color: white;
+    color: white;       
 }
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
 .form-container {
     width: 200px;
     height: 400px;

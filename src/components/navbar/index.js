@@ -20,18 +20,20 @@ const MyNavbar = ({onToggleLogin}) => {
 
     console.log(goodLink, "connecté ?", isLogin)
   return (
-    <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/">Flybet</Navbar.Brand>
-        <Nav className="mr-auto">
-            <Link to="/" className="lexnav">Home</Link>
-            <Link to="#features" className="lexnav">Features</Link>
-            <Link to="#pricing" className="lexnav">Pricing</Link>
-            <Link to="/my-profil" className="lexnav>"> <ProfilButton /> </Link>
-            <Link to={goodLink} className="lexnav"> {goodButton} </Link>
-            
-        </Nav>
-    
-    </Navbar>
+    <div className="navfix">
+      <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="/">Flybet</Navbar.Brand>
+          <Nav className="mr-auto">
+              <Link to="/" className="lexnav">Home</Link>
+              <Link to="#features" className="lexnav">Features</Link>
+              <Link to="#pricing" className="lexnav">Pricing</Link>
+              <Link to="/my-profil" className="lexnav>"> <ProfilButton /> </Link>
+              <Link to={goodLink} className="lexnav"> {goodButton} </Link>
+              
+          </Nav>
+      
+      </Navbar>
+    </div>
   )
 }
 export default MyNavbar

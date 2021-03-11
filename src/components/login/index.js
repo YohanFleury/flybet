@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 
 const LoginButton = () => {
   return (
-      <Button className="btn btn-success"> Se connecter </Button>
+      <Button className="btn btn-success"> Connexion </Button>
   )
 }
 export default LoginButton

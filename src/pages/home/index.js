@@ -1,9 +1,9 @@
 import React from 'react'
-import Explonation from 'components/explonations'
+import Header from 'components/header'
 const Home = () => {
   return (
       <div>
-        <Explonation />
+        <Header />
       </div>
   )
 }
