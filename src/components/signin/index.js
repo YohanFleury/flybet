@@ -22,7 +22,7 @@ const Signin = ({onToggleLogin}) => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
             </Form.Group>
-            <Link to="/">
+            <Link to="/tipster-home">
             <Button variant="primary" onClick={onToggleLogin}> 
                      Se connecter 
             </Button>

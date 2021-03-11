@@ -13,6 +13,8 @@ import MyProfil from './pages/myprofil'
 import BeforeSignup from 'components/beforesignup';
 import SignupForTipster from './components/signupTipster';
 import SignupForParieur from 'components/signupParieur';
+import TipsterHome from 'pages/tipsterHome'
+import AfterInscriptionTipster from 'pages/afterInscription'
 
 const App = () => {
   const [isLogin, setIsLogin] = useState(false)
@@ -42,6 +44,12 @@ const App = () => {
                 </Route>
                 <Route path="/inscription">
                     <BeforeSignup />
+                </Route>
+                <Route path="/tipster-home">
+                    <TipsterHome />
+                </Route>
+                <Route path="/tipster-after-inscription">
+                    <AfterInscriptionTipster />
                 </Route>
             </Switch> 
         </main>

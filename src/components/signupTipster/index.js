@@ -2,14 +2,16 @@ import React from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import 'components/signupTipster/index.css'
+import { Link } from 'react-router-dom'
 
 
 const SignupForTipster = () => {
+   
  return (
 <div className="background">
     <div className="main-container">
         <h2>Salut à toi futur Tipster</h2>
-        <div className="form-container">
+        <div className="form-container" id="inscritpion">
             <Form>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Pseudo</Form.Label>
@@ -29,9 +31,10 @@ const SignupForTipster = () => {
                     <Form.Label>Confirm password</Form.Label>
                     <Form.Control type="password" placeholder="Confirm password" />
                 </Form.Group>
-                <Button variant="warning" type="submit">
-                    M'inscrire
-                </Button>
+                <Link to="/tipster-after-inscription"><Button variant="warning">
+                        M'inscrire
+                    </Button>
+                </Link>
             </Form>
         </div>
     </div>
